@@ -1,0 +1,15 @@
+version: '2'
+services:
+  srv:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    mem_limit: 512m
+    ports:
+     - "8190:8190"
+    environment:
+      PORT: "8190"
+      GOOGLE_CLOUD_PROJECT: local-dev-test-gcp-project
+      PUBSUB_EMULATOR_HOST:
+      PUBSUB_VERIFICATION_TOKEN: local-dev-test-token
+      PUBSUB_TOPIC: local-dev-test-topic

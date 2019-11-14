@@ -1,0 +1,11 @@
+.git/
+_bin/
+_tmp/
+.bitrise.secrets.yml
+.dockerignore
+.gitignore
+bitrise.yml
+docker-compose.yml
+Dockerfile
+LICENSE
+README.md
